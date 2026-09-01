@@ -30,7 +30,7 @@ class CircleIconButton extends StatelessWidget {
             ),
           ],
         ),
-        child: Icon(icon, size: 20, color: iconColor),
+        child: Icon(icon, size: 20, color: iconColor)
       ),
     );
   }
