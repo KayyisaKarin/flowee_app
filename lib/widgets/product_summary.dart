@@ -22,8 +22,7 @@ class ProductSummary extends StatelessWidget {
             ],
           ),
         ),
-
-        // panggil rating definition
+        _RatingBadge(rating: flower.rating)
       ],
     );
   }
