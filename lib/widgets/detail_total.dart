@@ -17,9 +17,9 @@ class DetailTotalBar extends StatelessWidget {
             BoxShadow(
               color: Colors.black.withValues(alpha: 0.06),
               blurRadius: 20,
-              offset: Offset(0, 6)
-            )
-          ]
+              offset: Offset(0, 6),
+            ),
+          ],
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -33,9 +33,9 @@ class DetailTotalBar extends StatelessWidget {
               style: TextStyle(
                 fontSize: 19,
                 fontWeight: FontWeight.w800,
-                color: AppTheme.primaryDark
+                color: AppTheme.primaryDark,
               ),
-            )
+            ),
           ],
         ),
       ),
