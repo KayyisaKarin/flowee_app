@@ -1,5 +1,4 @@
 import 'package:flowee_app/theme/app_theme.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class CategoryChipList extends StatelessWidget {
