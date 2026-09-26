@@ -4,7 +4,6 @@ import 'package:flowee_app/widgets/detail_header.dart';
 import 'package:flowee_app/widgets/detail_total.dart';
 import 'package:flowee_app/widgets/product_summary.dart';
 import 'package:flowee_app/widgets/quantity_stepper.dart';
-import 'package:flowee_app/widgets/sheet_drag_handle.dart';
 import 'package:flutter/material.dart';
 
 class DetailScreen extends StatefulWidget {
@@ -59,8 +58,6 @@ class _DetailScreenState extends State<DetailScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    SheetDragHandle(),
-                    SizedBox(height: 20),
                     ProductSummary(flower: flower),
                     SizedBox(height: 22),
                     Text(
@@ -85,7 +82,8 @@ class _DetailScreenState extends State<DetailScreen> {
                       quantity: _quantity, 
                       onIncrement: _increment, 
                       onDecrement: _decrement
-                      )
+                      ),
+                    SizedBox(height: 50),
                   ],
                 ),
               ),

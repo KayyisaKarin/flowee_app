@@ -2,6 +2,7 @@ import 'package:flowee_app/data/dummy_data.dart';
 import 'package:flowee_app/screens/detail_screen.dart';
 import 'package:flowee_app/state/favorites_controller.dart';
 import 'package:flowee_app/theme/app_theme.dart';
+import 'package:flowee_app/widgets/empty_favorite_state.dart';
 import 'package:flowee_app/widgets/flower_card.dart';
 import 'package:flutter/material.dart';
 
@@ -27,14 +28,13 @@ class FavoriteScreen extends StatelessWidget {
                     .toList();
 
                 if (favoriteFlowers.isEmpty) {
-                  return const Placeholder(); //class empty
+                  return EmptyFavoriteState(); //class empty
                 }
 
                 return GridView.builder(
                   padding: EdgeInsets.fromLTRB(20, 4, 20, 100),
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
-                    mainAxisExtent: 16,
                     crossAxisSpacing: 16,
                     childAspectRatio: 0.68,
                   ),

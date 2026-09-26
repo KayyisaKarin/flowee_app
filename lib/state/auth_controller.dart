@@ -24,6 +24,6 @@ class AuthController extends ValueNotifier<bool> {
   Future<void> logout() async {
     value = false;
     final prefs = await SharedPreferences.getInstance();
-    await prefs. setBool(_prefKey, false);
+    await prefs.setBool(_prefKey, false);
   }
 }

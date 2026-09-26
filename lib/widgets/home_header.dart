@@ -15,8 +15,11 @@ class HomeHeader extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Halo, Demo User',
-              style: TextStyle(fontSize: 13, color: AppTheme.textSecondary),
+              'Halo, Demo User ✌🏻',
+              style: TextStyle(
+                fontSize: 13,
+                color: AppTheme.textSecondary
+              ),
             ),
             SizedBox(height: 3),
             Text(
@@ -26,7 +29,7 @@ class HomeHeader extends StatelessWidget {
                 fontWeight: FontWeight.w800,
                 color: AppTheme.textPrimary,
               ),
-            ),
+            )
           ],
         ),
         InkWell(
@@ -37,7 +40,7 @@ class HomeHeader extends StatelessWidget {
             height: 46,
             decoration: BoxDecoration(
               gradient: LinearGradient(
-                colors: [AppTheme.primary, AppTheme.primaryDark],
+                colors: [AppTheme.primary, AppTheme.primaryDark]
               ),
               shape: BoxShape.circle,
               boxShadow: [
@@ -45,12 +48,12 @@ class HomeHeader extends StatelessWidget {
                   color: AppTheme.primary.withValues(alpha: 0.35),
                   blurRadius: 12,
                   offset: Offset(0, 4)
-              )
-              ],
+                )
+              ]
             ),
             child: Icon(Icons.person_rounded, color: Colors.white),
           ),
-        ),
+        )
       ],
     );
   }

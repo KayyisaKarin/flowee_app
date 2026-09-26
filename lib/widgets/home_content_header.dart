@@ -1,4 +1,3 @@
-// import 'package:flowee_app/widgets/home_header.dart';
 import 'package:flowee_app/data/dummy_data.dart';
 import 'package:flowee_app/theme/app_theme.dart';
 import 'package:flowee_app/widgets/banner_carousel.dart';
@@ -19,7 +18,7 @@ class HomeContentHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(20, 12, 20, 0),
+      padding: EdgeInsetsGeometry.fromLTRB(20, 12, 20, 0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -33,15 +32,15 @@ class HomeContentHeader extends StatelessWidget {
             categories: categories, 
             selectedCategory: selectedCategory, 
             onSelected: onCategorySelected
-            ),
-            SizedBox(height: 22),
-            Text(
-              'Rekomendasi untukmu',
-              style: AppTheme.display(fontSize: 18),
-            ),
-            SizedBox(height: 14),
+          ),
+          SizedBox(height: 22),
+          Text(
+            'Rekomendasi Untukmu',
+            style: AppTheme.display(fontSize: 18)
+          ),
+          SizedBox(height: 14)
         ],
       ),
-      );
+    );
   }
 }

@@ -63,7 +63,7 @@ class FlowerCard extends StatelessWidget {
                         final isFav = favorites.contains(flower.id);
                         return InkWell(
                           borderRadius: BorderRadius.circular(20),
-                          onTap: () => FavoritesController.instance.toggle, //FavController.instance
+                          onTap: () => FavoritesController.instance.toggle(flower.id),
                           child: CircleAvatar(
                             radius: 16,
                             backgroundColor: Colors.white,

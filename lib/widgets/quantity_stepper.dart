@@ -30,12 +30,13 @@ class QuantityStepper extends StatelessWidget {
           children: [
             _StepperButton(icon: Icons.remove_rounded, onTap: onDecrement),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 18),
+              padding: EdgeInsets.symmetric(horizontal: 14),
               child: Text(
                 '$quantity',
                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
               ),
             ),
+            _StepperButton(icon: Icons.add_rounded, onTap: onIncrement),
           ],
         ),
       ],

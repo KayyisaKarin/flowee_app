@@ -36,7 +36,7 @@ class BottomNavItem extends StatelessWidget {
             Icon(
               icon,
               size: 22,
-              color: selected ? AppTheme.primary : Colors.transparent,
+              color: selected ? AppTheme.primary : Colors.grey.shade400,
             ),
             AnimatedSize(
               duration: Duration(milliseconds: 220),

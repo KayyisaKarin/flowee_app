@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
 
-// Garis Kecil abu di bagian atas atau sebuah "Sheet UI" sbg tanda, bahwa screen/sheet
+// garis kecil abu di bagian atas atau sebuah sheet UI sebagai tanda bahwa bisa ditarik ke atas
 class SheetDragHandle extends StatelessWidget {
   const SheetDragHandle({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Center(
+      child: Container(
+        width: 44,
+        height: 5,
+        decoration: BoxDecoration(
+          color: Colors.grey.shade200,
+          borderRadius: BorderRadius.circular(3)
+        ),
+      ),
+    );
   }
 }
